@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script >
+
+
+
+ function calcula(){
+    var horas = document.getElementById("num1").value;
+var minutos = document.getElementById("num2").value;
+var segundos = document.getElementById("num3").value;
+var resultado = parseInt(horas * 3600) + parseInt(minutos * 60) + parseInt(segundos);
+
+document.getElementById("mensaje").innerHTML = "El resultado es: " + resultado;
+ }
+
+ 
+</script> 
+<form>
+    Hora actual: <input id="num1" type="text" /> </br>
+    minutos actuales: <input id="num2" type="text" /> </br>
+    segundos actual: <input id="num3" type="text" /> </br>
+    
+    <input type="button" value="Enviar" onclick="calcula();"/>
+ 
+</form>
+
+<div id="mensaje"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script >
+
+
+
+ function calcula(){
+    var celsius = document.getElementById("num1").value;
+
+
+var resultado = parseInt(celsius * 1,8) + 32;
+
+document.getElementById("mensaje").innerHTML = "El resultado es: " + resultado;
+ 
+
+
+
+}
+
+function calcular(){
+
+var faren = document.getElementById("num2").value;
+var resultado2 = parseInt(faren / 1,8) - 32 
+
+document.getElementById("mensaje").innerHTML = "El resultado es: " + resultado2;
+
+
+}
+ 
+</script> 
+<form>
+    celsius: <input id="num1" type="text" /> </br>
+    faren: <input id="num2" type="text" /> </br>
+    
+    
+    <input type="button" value="De celsius a farenheights" onclick="calcula();"/>
+    <input type="button" value="De farenheights a celsius" on click="calcular()"/>  
+
+</form>
+
+<div id="mensaje"></div>
+
+
+</body>
+</html>
